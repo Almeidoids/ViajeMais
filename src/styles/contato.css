@@ -1,0 +1,30 @@
+.contatar {
+    margin-top: 150px;
+}
+
+.contatos{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    padding: 20px;
+}
+
+.inputs {
+    height: 45px;
+    font-size: 14px;
+}
+
+.organization {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons {
+    color: #000;
+    width: 150px;
+    border: none;
+}
+
+.alert {
+    width: 90%;
+}
