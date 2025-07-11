@@ -35,24 +35,30 @@ export default function Contato() {
                     onSubmit = {(e) => submit(e, setAlert, setError, setError2, setError3, setError4)} //Envia para ser tratado pela função submit
                 >
                     <Container maxWidth = "lg" className = "contatar">
-                        <TextField
-                            name = "question"
-                            label = "Sua pergunta"
-                            className = "inputs"
-                            required
-                            fullWidth
-                            sx = {{my: 1}}
-                            variant = "standard"
-                            error = {error}
-                            onInvalid = {() => setError(true)} // Se o input estiver inválido, dá erro
-                        />
+                        <div>
+                            <TextField
+                                name = "question"
+                                label = "Sua pergunta"
+                                aria-label = "top"
+                                className = "inputs"
+                                required
+                                fullWidth
+                                sx = {{my: 2, height: 100}}
+                                variant = "outlined"
+                                error = {error}
+                                onInvalid = {() => setError(true)} // Se o input estiver inválido, dá erro
+                                multiline
+                                rows = {4}
+                                maxRows = {4}
+                            />
+                        </div>
                         <TextField  
                             name = "name"
                             label = "Nome" 
                             className = "inputs"
                             required 
                             fullWidth
-                            sx = {{my: 1}}
+                            sx = {{my: 2}}
                             variant = "standard"
                             error = {error2}
                             onInvalid = {() => setError2(true)}
@@ -63,7 +69,7 @@ export default function Contato() {
                             className = "inputs"
                             required
                             fullWidth
-                            sx = {{my: 1}}
+                            sx = {{my: 2}}
                             variant = "standard"
                             error = {error3}
                             onInvalid = {() => setError3(true)} 
@@ -75,7 +81,7 @@ export default function Contato() {
                             className = "inputs"
                             required 
                             fullWidth
-                            sx = {{my: 1}}
+                            sx = {{my: 2}}
                             variant = "standard"
                             error = {error4}
                             onInvalid = {() => setError4(true)}
@@ -106,7 +112,7 @@ export default function Contato() {
             <Box sx = {{display: "flex", justifyContent: "center"}}>
                 <Alert 
                     severity = "success" 
-                    sx = {{display: alert ? "flex" : "none", position: "fixed", top: "80%", mx: "5%" }} 
+                    sx = {{position: "fixed", display: alert ? "flex" : "none", top: "90%", mx: "5%" }} 
                     className = "alert" 
                     variant = "filled" 
                     onClose = {() => setAlert(false)}
