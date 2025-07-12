@@ -18,7 +18,9 @@ Este projeto foi desenvolvido como parte de um proceso seletivo para a vaga de E
 
 ## Instruções Para Executar o Projeto 
 
-Para executar o projeto localmente, insira os seguintes comandos no terminal, com o npm já instalado:
+O site pode ser acessado por este [link](https://viaje-mais-omega.vercel.app/).
+
+Caso queira executar o projeto localmente, insira os seguintes comandos no terminal, com o npm já instalado:
 
 - `npm install` 
 - `npm run start` 
