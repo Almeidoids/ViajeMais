@@ -37,6 +37,6 @@ O código foi estruturado de forma a facilitar a leitura e manutenção. A maior
 - **config**: arquivos de roteamento do React Router e o tema das fontes;
 - **pages**: Páginas do site;
 - **styles**: Estilos utilizados;
-**util**: Função utilizada para fazer a requisição ao endpoint de blogs;
+- **util**: Função utilizada para fazer a requisição ao endpoint de blogs;
 
 As funções utilizadas pelos componentes e páginas, estão organizadas no final de cada arquivo correspondente, para facilitar a leitura e entendimento.
