@@ -11,14 +11,14 @@ import "../styles/blog.css";
 // Card que contém as informações dos blogs
 export default function CardBlogs({data, title, description, url}) {
     return (
-        <Card className = "card" sx = {{backgroundColor: "#Fa8669"}} >
+        <Card className = "card" sx = {{backgroundColor: "#7A746C"}} >
             {/* Data que o post foi publicado */}
-            <Typography variant = "body2" sx = {{ml: 2, mt: 1}} >{data}</Typography>
+            <Typography variant = "body2" sx = {{ml: 2, mt: 1, color: "#F0F2F2"}} >{data}</Typography>
 
             {/* Conteudo do post com titulo e descrição */}
             <CardContent>
-                <Typography variant = "h3" className = "name" >{title}</Typography>
-                <Typography variant = "body1" sx = {{mt: 2, height: 46}} >{description}</Typography>
+                <Typography variant = "h3" className = "name" color = "#F0F2F2">{title} </Typography>
+                <Typography variant = "body1" sx = {{mt: 2, height: 46}} color = "#F0F2F2"  >{description}</Typography>
             </CardContent>
 
             {/* Botão veja mais */}
